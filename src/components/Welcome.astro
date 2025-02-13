@@ -4,7 +4,10 @@ import Greet from "./Greet.svelte";
 
 <main class="h-full w-full">
     <div class="justify-center items-center w-full flex flex-col gap-10 p-10">
-        <img src="/src/assets/avatar.png" class="w-1/8 rounded-full" />
+        <img
+            src="/assets/avatar.png"
+            class="w-1/8 md:w-1/8 xl:w-1/16 rounded-full"
+        />
 
         <Greet name="Harrow Fung" class="p-4" />
 
@@ -19,7 +22,7 @@ import Greet from "./Greet.svelte";
             >
                 <img
                     alt="GitHub Link"
-                    src="/src/assets/mdi--github.svg"
+                    src="/assets/mdi--github.svg"
                     class="invert size-8"
                     aria-label="GitHub"
                     aria-roledescription="link"
@@ -31,10 +34,10 @@ import Greet from "./Greet.svelte";
                 class="bg-indigo-800 p-3 rounded-2xl flex-row w-fit gap-2 text-2xl shadow-2xl font-semibold flex hover:bg-indigo-900 select-none"
             >
                 <img
-                    alt="GitHub Link"
-                    src="/src/assets/ic--baseline-discord.svg"
+                    alt="Discord Link"
+                    src="/assets/ic--baseline-discord.svg"
                     class="invert size-8"
-                    aria-label="GitHub"
+                    aria-label="Discord"
                     aria-roledescription="link"
                 />
             </a>
