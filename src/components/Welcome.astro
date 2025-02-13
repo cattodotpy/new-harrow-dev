@@ -2,7 +2,7 @@
 import Greet from "./Greet.svelte";
 ---
 
-<main class="h-full w-full">
+<main class="h-full w-full p-5">
     <div class="justify-center items-center w-full flex flex-col gap-10 p-10">
         <img
             src="/assets/avatar.png"
@@ -18,7 +18,7 @@ import Greet from "./Greet.svelte";
         <div class="w-full mx-5 flex flex-row justify-center gap-5">
             <a
                 href="https://github.com/cattodotpy"
-                class="bg-gray-800 e p-3 rounded-2xl flex-row w-fit gap-2 text-2xl shadow-2xl font-semibold flex hover:bg-gray-700 select-none"
+                class="bg-gray-800 e p-3 rounded-2xl flex-row w-fit gap-2 text-2xl shadow-2xl font-semibold flex transition hover:-translate-y-1 select-none"
             >
                 <img
                     alt="GitHub Link"
@@ -31,28 +31,34 @@ import Greet from "./Greet.svelte";
 
             <a
                 href="https://discord.com/users/994830124165906444"
-                class="bg-indigo-800 p-3 rounded-2xl flex-row w-fit gap-2 text-2xl shadow-2xl font-semibold flex hover:bg-indigo-900 select-none"
+                class="bg-indigo-800 p-3 rounded-2xl flex-row w-fit gap-2 text-2xl shadow-2xl font-semibold flex transition hover:-translate-y-1 select-none text-center"
             >
-                <img
-                    alt="Discord Link"
-                    src="/assets/ic--baseline-discord.svg"
-                    class="invert size-8"
-                    aria-label="Discord"
-                    aria-roledescription="link"
-                />
+                <div class="flex flex-row gap-2 text-center">
+                    <img
+                        alt="Discord Link"
+                        src="/assets/ic--baseline-discord.svg"
+                        class="invert size-8"
+                        aria-label="Discord"
+                        aria-roledescription="link"
+                    />
+
+                    <span
+                        class="text-white text-sm text-center relative top-1/6"
+                        >caatto</span
+                    >
+                </div>
             </a>
+
+            <!-- seperator -->
         </div>
+    </div>
 
-        <!-- seperator -->
-        <div class="w-full h-0.5 bg-gray-500"></div>
+    <div class="w-3/4 h-0.5 bg-gray-500 my-10 mx-auto"></div>
 
-        <div class="flex flex-col gap-4">
-            <h1 class="text-3xl font-bold text-center">Projects</h1>
-            <div
-                class="flex flex-row justify-center text-center gap-5 text-2xl"
-            >
-                <p>404 Not Found <span class="text-sm">(yet)</span></p>
-            </div>
+    <div class="flex flex-col gap-4">
+        <h1 class="text-3xl font-bold text-center">Projects</h1>
+        <div class="flex flex-row justify-center text-center gap-5 text-2xl">
+            <p>404 Not Found <span class="text-sm">(yet)</span></p>
         </div>
     </div>
 </main>
